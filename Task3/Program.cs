@@ -15,28 +15,24 @@ Console.WriteLine($"Каждое слово с заглавной \n{capital}");
 
 int Value()
 {
-    string str = RemoveChars(sentence);
-    string[] s = str.Split(' ');
+    string[] s = RemoveChars(sentence);
     int value = s.Length;
     return value;
     
 }
 String Sort()
 {
-    string sort = RemoveChars(sentence);
-    sort = string.Join(" ", sort.Split().OrderBy(x=>x));
-
+    sort = string.Join(" ", RemoveChars(sentence).OrderBy(x=>x));
     return sort;
 }
 String FirstUpper()
 {
-    string str = RemoveChars(sentence);
-    string[] s = str.Split(' ');
+    string[] s = RemoveChars(sentence);
 
     for (int i = 0; i < s.Length; i++)
     {
         if (s[i].Length > 1)
-            s[i] = s[i][..1].ToUpper() + s[i][1..].ToLower();
+            s[i] = s[i].Substring(0,1).ToUpper() + s[i].Substring(1).ToLower();
         else s[i] = s[i].ToUpper();
     }
     return string.Join(" ", s);
@@ -44,15 +40,9 @@ String FirstUpper()
 
 }
 
-String RemoveChars(string str)
+String[] RemoveChars(string str)
 {
-    for (int ctr = 0; ctr < str.Length; ctr++)
-    {
-        if (Char.IsPunctuation(str[ctr]))
-            str = str.Replace(str[ctr], ' ');
-    }
-    string[] words = str.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-    str = string.Join(" ", words);
-
-    return str;
+ 
+    string[] words = str.Split(new char[] { '.', ',', '!', '?', ';', ':', '-',' '}, StringSplitOptions.RemoveEmptyEntries);
+    return words;
 }

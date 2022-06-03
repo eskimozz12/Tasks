@@ -10,8 +10,7 @@ Console.WriteLine($"Количество совпадений в предлож�
 int Search(string substr)
 {
     int count = 0;
-    string str = RemoveChars(sentence);
-    string[] words = str.Split(' ');
+    string[] words = RemoveChars(sentence);
     for (int i = 0; i < words.Length; i++)
     {
         if(words[i].Equals(substr, StringComparison.OrdinalIgnoreCase))
@@ -24,16 +23,9 @@ int Search(string substr)
 
 }
 
-String RemoveChars(string str)
+String[] RemoveChars(string str)
 {
-    string result = str;
-    for (int ctr = 0; ctr < result.Length; ctr++)
-    {
-        if (Char.IsPunctuation(result[ctr]))
-            result = result.Replace(result[ctr], ' ');
-    }
-    string[] words = result.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-    result = string.Join(" ", words);
 
-    return result;
+    string[] words = str.Split(new char[] { '.', ',', '!', '?', ';', ':', '-' }, StringSplitOptions.RemoveEmptyEntries);
+    return words;
 }
