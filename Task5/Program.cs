@@ -3,7 +3,7 @@ Random random = new Random();
 
 for (int i = 0; i < vs.Length; i++)
 {
-    vs[i] = random.Next(1, 1000);
+    vs[i] = i;
     Console.WriteLine(vs[i]);
 }
 Console.WriteLine("----------------------");
