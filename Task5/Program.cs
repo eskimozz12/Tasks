@@ -1,58 +1,33 @@
-﻿try
+﻿int[] vs = new int[100];
+Random random = new Random();
+
+for (int i = 0; i < vs.Length; i++)
 {
-    Console.WriteLine("Введите количество чисел");
-    uint n = Convert.ToUInt32(Console.ReadLine());
-    List<Int32> list = new List<Int32>();
-    if (n <= 100)
+    vs[i] = random.Next(1, 1000);
+    Console.WriteLine(vs[i]);
+}
+Console.WriteLine("----------------------");
+for (int i = 0;i < vs.Length; i++)
+{
+    if (isPal(vs[i]))
     {
-        int[] array = new int[n];
-        Console.WriteLine("Введите числа");
-        for (int i = 0; i < array.Length; i++)
-        {
-            array[i] = Convert.ToInt32(Console.ReadLine());
-        }
-        Console.WriteLine();
-        list = Palindrom(array);
-        Console.WriteLine("Числа палиндромы:");
-        foreach(Int32 i in list) { Console.WriteLine(i); }
-
-
+        Console.WriteLine(vs[i]);
     }
-    else Console.WriteLine("Количество чисел не должно превышать 100");
-
-}
-catch (FormatException)
-{
-    Console.WriteLine("Введите число");
-}
-catch (OverflowException)
-{
-    Console.WriteLine("Размерность последовательности должна являться неотрицательным числом");
-}
-
-
-List<Int32> Palindrom(int[] arr)
-{
-    List<Int32> list = new List<Int32>();   
-    int n2;
-    int digit;
-    int k;
-    for (int i = 0;i < arr.Length; i++)
-    {
-        n2 = 0;
-        k = arr[i];
-        while (k > 0)
-        {
-            digit = k % 10;
-            k /= 10;
-            n2 = n2 * 10 + digit;
-         
-        }
-        if (n2 == arr[i])
-        {
-            list.Add(arr[i]);
-        }
-    }
-    return list;
 } 
+
+
+bool isPal(int x)
+{
+    int check = x;
+    int digit = 0;
+    int sum = 0;
+    while (x > 0)
+    {
+        digit = x % 10;
+        sum = (sum * 10) + digit;
+        x /= 10;
+    }
+    if (check == sum) return true;
+    else return false;
+}
 
