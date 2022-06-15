@@ -1,17 +1,9 @@
-﻿int[] vs = new int[100];
-Random random = new Random();
-
-for (int i = 0; i < vs.Length; i++)
+﻿Console.WriteLine("Числа палиндромы в последовательности от 0 до 100:");
+for (int i = 0;i < 100; i++)
 {
-    vs[i] = i;
-    Console.WriteLine(vs[i]);
-}
-Console.WriteLine("----------------------");
-for (int i = 0;i < vs.Length; i++)
-{
-    if (isPal(vs[i]))
+    if (isPal(i))
     {
-        Console.WriteLine(vs[i]);
+        Console.WriteLine(i);
     }
 } 
 

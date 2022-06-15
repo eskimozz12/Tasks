@@ -26,7 +26,7 @@ void ShowItems(List<Item> items)
 {
     foreach (Item i in items)
     {
-        Console.WriteLine($"Название: {i.name}\n Вес: {i.weight.ToString()}\n Цена: {i.cost.ToString()}");
+        Console.WriteLine($"Название: {i.Name}\n Вес: {i.Weight.ToString()}\n Цена: {i.Cost.ToString()}");
     }
     Console.WriteLine();
 }

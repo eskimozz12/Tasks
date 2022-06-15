@@ -8,15 +8,15 @@ namespace Task6
 {
     internal class Item
     {
-        public string name { get; set; }
-        public double cost { get; set; }
-        public double weight { get; set; }
+        public string Name { get; set; }
+        public double Cost { get; set; }
+        public double Weight { get; set; }
 
         public Item(string name, double weight, double cost)
         {
-            this.name = name;
-            this.cost = cost;
-            this.weight = weight;
+            this.Name = name;
+            this.Cost = cost;
+            this.Weight = weight;
         }
     }
 }

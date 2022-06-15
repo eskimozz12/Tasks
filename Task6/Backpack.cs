@@ -22,7 +22,7 @@ namespace Task6
             double weightSum = 0;
             foreach (Item i in items)
             {
-                weightSum += i.weight;
+                weightSum += i.Weight;
             }
             return weightSum;
         }
@@ -31,7 +31,7 @@ namespace Task6
             double costSum = 0;
             foreach (Item i in items)
             {
-                costSum += i.cost;
+                costSum += i.Cost;
             }
             return costSum;
         }
