@@ -49,7 +49,7 @@ NumberType IsPrime(int x)
     }
 
     return NumberType.Prime;
-}
+};
 
 enum NumberType
 {
