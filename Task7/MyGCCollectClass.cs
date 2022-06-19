@@ -11,9 +11,9 @@ namespace Task7
         ListSearch list = new ListSearch();
         internal void Garbage()
         {
-            Console.WriteLine("Размер памяти в байтах {0}", GC.GetTotalMemory(false));
+            Console.WriteLine("Размер памяти в байтах до вызова метода Insert {0}", GC.GetTotalMemory(false));
             string result1 = list.AddInsert();
-            Console.WriteLine("Размер памяти в байтах {0}", GC.GetTotalMemory(false));
+            Console.WriteLine("Размер памяти в байтах после вызова метода Insert {0}", GC.GetTotalMemory(false));
         }
 
     }
