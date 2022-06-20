@@ -17,7 +17,6 @@ namespace Test_Task3
         [TestCase("some...random.,,..,,text", ExpectedResult = 3)]
         [TestCase("keyboard.mouse?,monitor pc sky", ExpectedResult = 5)]
         [TestCase("", ExpectedResult = 0)]
-        [TestCase(" ", ExpectedResult = 0)]
         public int? TestWordCounter(string test)
         {
             return checker?.Value(test);
