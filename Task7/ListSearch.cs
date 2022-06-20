@@ -44,7 +44,7 @@ namespace Task7
             Console.WriteLine($"Время поиска элемента посередине BinSearch: {result10}");
 
         }  
-        List<Int32> Numbers()
+        internal List<Int32> Numbers()
         {
             List<Int32> numbers = new(10000000);
             for (int i = 1; i <= numbers.Capacity; i++)

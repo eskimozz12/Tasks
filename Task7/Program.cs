@@ -1,15 +1,15 @@
 ﻿using System.Diagnostics;
 using Task7;
 
-ListSearch list = new ListSearch();
+ListSearch list = new();
 list.Result();
 Console.WriteLine("----------------------");
-LinkedListSearch linkedList = new LinkedListSearch();
+LinkedListSearch linkedList = new();
 linkedList.Result();
 Console.WriteLine("----------------------");
-Dictionary dictionary = new Dictionary();
+Dictionary dictionary = new();
 dictionary.Result();
-
+Console.WriteLine("----------------------");
 MyGCCollectClass mGCCol = new();
 mGCCol.Garbage();
 

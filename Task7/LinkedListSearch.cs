@@ -21,7 +21,7 @@ namespace Task7
             string result3 = Add();
             Console.WriteLine($"Время добавления элемента LinkedList: {result3}");
         }
-        LinkedList<Int32> Numbers()
+        internal LinkedList<Int32> Numbers()
         {
             LinkedList<Int32> numbers = new();
             for (int i = 1; i <= 10000000; i++)

@@ -21,7 +21,7 @@ namespace Task7
             string result3 = Delete();
             Console.WriteLine($"Время удаления последнего элемента Dictionary: {result3}");
         }
-        Dictionary<UInt32, string> Numbers()
+        internal Dictionary<UInt32, string> Numbers()
         {
             Dictionary<UInt32, string> numbers= new();
             for (uint i = 1; i <= 10000000; i++)
