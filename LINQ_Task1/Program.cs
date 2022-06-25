@@ -1,10 +1,12 @@
-﻿try
+﻿
+try
 {
     Console.WriteLine("Введите число факториалов");
-    Factorials check = new Factorials { Checker = Convert.ToInt32(Console.ReadLine())};
+    Factorials check = new Factorials { Checker = Convert.ToInt32(Console.ReadLine()) };
     Console.WriteLine();
-    var numbers = check.Fact();
-    foreach(var number in numbers)
+    int x = check.Checker;
+    var numbers = check.Fact().Take(x);
+    foreach (var number in numbers)
     {
         Console.WriteLine(number);
     }
@@ -28,18 +30,19 @@ class Factorials
         get => checker;
         set
         {
-            if (value >= 17 || value <= 0 ) throw new NumberException("Введенное число должно быть больше 0 и меньше 17");
+            if (value >= 17 || value <= 0) throw new NumberException("Введенное число должно быть больше 0 и меньше 17");
             else checker = value;
         }
-                        
+
     }
 
     public IEnumerable<int> Fact()
     {
         int sum = 1;
-        for (int i = 1; i <= checker; i++)
+        for (int i = 2; ; i++)
         {
-            yield return sum *= i;
+            yield return sum;
+            sum *= i;
         }
     }
 }
