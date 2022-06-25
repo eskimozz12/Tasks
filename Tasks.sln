@@ -17,11 +17,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task6", "Task6\Task6.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task7", "Task7\Task7.csproj", "{9772739D-181F-4092-AFA1-91A48C79D57F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Task1", "Test_Task1\Test_Task1.csproj", "{82D9F731-220C-48D4-9ADC-5C249FD05682}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test_Task1", "Test_Task1\Test_Task1.csproj", "{82D9F731-220C-48D4-9ADC-5C249FD05682}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrariesForTests", "Test1Library\LibrariesForTests.csproj", "{569B79AD-1733-44E9-9E42-B0311C1D4C99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibrariesForTests", "Test1Library\LibrariesForTests.csproj", "{569B79AD-1733-44E9-9E42-B0311C1D4C99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Task3", "Test_Task3\Test_Task3.csproj", "{1F0B1E0A-5651-45B0-B048-3A4657A638ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test_Task3", "Test_Task3\Test_Task3.csproj", "{1F0B1E0A-5651-45B0-B048-3A4657A638ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_Task1", "LINQ_Task1\LINQ_Task1.csproj", "{29558116-63CE-4710-A448-C04751510D65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_Task2", "LINQ_Task2\LINQ_Task2.csproj", "{A98F1914-7661-4511-AB0A-F213463426FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{1F0B1E0A-5651-45B0-B048-3A4657A638ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F0B1E0A-5651-45B0-B048-3A4657A638ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F0B1E0A-5651-45B0-B048-3A4657A638ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29558116-63CE-4710-A448-C04751510D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29558116-63CE-4710-A448-C04751510D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29558116-63CE-4710-A448-C04751510D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29558116-63CE-4710-A448-C04751510D65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A98F1914-7661-4511-AB0A-F213463426FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A98F1914-7661-4511-AB0A-F213463426FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A98F1914-7661-4511-AB0A-F213463426FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A98F1914-7661-4511-AB0A-F213463426FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
