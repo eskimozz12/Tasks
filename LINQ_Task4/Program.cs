@@ -1,4 +1,5 @@
-﻿List<Entry> entries = new List<Entry>()
+﻿
+List<Entry> entries = new List<Entry>()
  {
         new Entry("Иван", "313131",false),
         new Entry("Данил", "8(925)795-6505",true),
@@ -16,7 +17,7 @@
  };
 
 
-var selectedPeople = entries.Where(t => t.IsPortable).OrderBy(t => t.Name, new CaseInsensitiveComparer()).Select((n, i) => new {Pos =  i + 1, Value = n}).Select(x=>x.Pos +") "+x.Value.Name +" - " + x.Value.Phone);
+var selectedPeople = entries.Where(t => t.IsPortable).OrderBy(t => t.Name, StringComparer.CurrentCultureIgnoreCase).Select((n, i) => $"{i + 1}) {n.Name} - {n.Phone}");
 foreach (var entry in selectedPeople)
 {
     Console.WriteLine(entry);
@@ -37,12 +38,4 @@ class Entry
     }
  
 
-}
-
-class CaseInsensitiveComparer : IComparer<String>
-{
-    public int Compare(string? x, string? y)
-    {
-        return string.Compare(x, y, StringComparison.CurrentCultureIgnoreCase);
-    }
 }
