@@ -17,7 +17,8 @@ List<Entry> entries = new List<Entry>()
  };
 
 
-var selectedPeople = entries.Where(t => t.IsPortable).OrderBy(t => t.Name, StringComparer.CurrentCultureIgnoreCase).Select((n, i) => $"{i + 1}) {n.Name} - {n.Phone}");
+var selectedPeople = entries.Where(t => t.IsPortable).OrderBy(t => t.Name, StringComparer.CurrentCultureIgnoreCase)
+                            .Zip(Enumerable.Range(1, int.MaxValue), (x, i) => $"{i}) {x.Name} - {x.Phone}");
 foreach (var entry in selectedPeople)
 {
     Console.WriteLine(entry);

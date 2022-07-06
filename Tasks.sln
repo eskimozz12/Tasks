@@ -29,7 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ_Task2", "LINQ_Task2\LI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ_Task3", "LINQ_Task3\LINQ_Task3.csproj", "{45A9E37E-569D-458A-81BD-EBD3907D2734}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_Task4", "LINQ_Task4\LINQ_Task4.csproj", "{0BA25EBF-F7ED-4E73-85B4-66C7ABEE0AEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ_Task4", "LINQ_Task4\LINQ_Task4.csproj", "{0BA25EBF-F7ED-4E73-85B4-66C7ABEE0AEC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TxtStringCounter", "TxtStringCounter\TxtStringCounter.csproj", "{66AC7365-E048-42A7-831D-15EC5E89BCC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyDirectories", "CopyDirectories\CopyDirectories.csproj", "{1E8056AA-08B1-42A8-ACEE-EF4E0B1998B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +97,14 @@ Global
 		{0BA25EBF-F7ED-4E73-85B4-66C7ABEE0AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BA25EBF-F7ED-4E73-85B4-66C7ABEE0AEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BA25EBF-F7ED-4E73-85B4-66C7ABEE0AEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66AC7365-E048-42A7-831D-15EC5E89BCC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66AC7365-E048-42A7-831D-15EC5E89BCC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66AC7365-E048-42A7-831D-15EC5E89BCC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66AC7365-E048-42A7-831D-15EC5E89BCC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E8056AA-08B1-42A8-ACEE-EF4E0B1998B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E8056AA-08B1-42A8-ACEE-EF4E0B1998B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E8056AA-08B1-42A8-ACEE-EF4E0B1998B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E8056AA-08B1-42A8-ACEE-EF4E0B1998B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
